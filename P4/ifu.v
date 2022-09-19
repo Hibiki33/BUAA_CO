@@ -27,18 +27,11 @@ module ifu(
     input Branch3,
 	 input [31:0] Imm32,
 	 input [31:0] ALUResult,
-    output reg[31:0] PC,
-    output reg[31:0] Instr
-    );
-	 
-	 initial PC = 32'h00003000;
-	 
-	im im_uut (
-		.PC(PC),
-		.Instruction(Instr)
-	);
+    output [31:0] PC,
+    output [31:0] Instr
+    ); 
 	
-	wire[31:0] adder1, adder2, mux, PCj;
+	wire[31:0] adder1, adder2, mux1, mux2, mux3, PCj;
 	
 	assign PCj = {PC[31:28], Instr[25:0], {2{1'b0}}};
 	
@@ -48,16 +41,16 @@ module ifu(
 	assign mux2 = Branch2 ? PCj : mux1;
 	assign mux3 = Branch3 ? ALUResult : mux2;
 	
-	always @(posedge Clk) begin
-		if (Reset) begin
-			PC <= 0;
-		end
-		else begin
-			PC <= mux3;
-		end
-	end
+	pc pc_inst (
+		 .Clk(Clk),
+		 .Reset(Reset),
+		 .next_PC(mux3),
+		 .PC(PC)
+	 );
+	 
+	im im_inst (
+		.PC(PC),
+		.Instruction(Instr)
+	);
 	
-	
-
-
 endmodule

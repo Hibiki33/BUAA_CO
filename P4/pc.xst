@@ -1,5 +1,0 @@
-set -tmpdir "D:/Computer Organization/Verilog/P4/xst/projnav.tmp"
-set -xsthdpdir "D:/Computer Organization/Verilog/P4/xst"
-elaborate
--ifn pc.prj
--ifmt mixed

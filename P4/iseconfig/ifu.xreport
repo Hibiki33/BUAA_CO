@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-09-19T08:34:21</DateModified>
+  <DateModified>2022-09-19T09:20:27</DateModified>
   <ModuleName>ifu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Computer Organization/Verilog/P4/iseconfig/ifu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Computer Organization/Verilog/P4\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Computer Organization/BUAA_CO/P4/iseconfig/ifu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Computer Organization/BUAA_CO/P4\</ImplementationReportsDirectory>
   <DateInitialized>2022-09-18T22:45:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

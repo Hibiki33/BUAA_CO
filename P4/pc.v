@@ -25,6 +25,8 @@ module pc(
     output reg[31:0] PC
     );
 	 
+	 initial PC = 32'h00003000;
+	 
 	 always @(posedge Clk) begin
 		if (Reset) begin
 			PC <= 32'h00003000;
