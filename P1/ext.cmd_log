@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {D:/Computer Organization/BUAA_CO/P1/ext.v} -lang verilog -prj P1 -o ext.spl -module ext -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan3 ext.spl {D:/Computer Organization/BUAA_CO/P1/ext.sym} 
+vhdtdtfi -lang verilog -prj P1 -o "D:/Computer Organization/BUAA_CO/P1/ext.tfi" -lib work "D:/Computer Organization/BUAA_CO/P1//ext.v" -module ext -template D:/ISE/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
