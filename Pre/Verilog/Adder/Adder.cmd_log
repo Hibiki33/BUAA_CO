@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/Computer Organization/Verilog/Adder/Adder.xst" -ofn "D:/Computer Organization/Verilog/Adder/Adder.syr" 
+xst -intstyle ise -ifn "D:/Computer Organization/Verilog/Adder/Adder.xst" -ofn "D:/Computer Organization/Verilog/Adder/Adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa3s50-vqg100-4 "Adder.ngc" Adder.ngd  
+map -intstyle ise -p xa3s50-vqg100-4 -cm area -ir off -pr off -c 100 -o Adder_map.ncd Adder.ngd Adder.pcf 
+par -w -intstyle ise -ol high -t 1 Adder_map.ncd Adder.ncd Adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Adder.twx Adder.ncd -o Adder.twr Adder.pcf 
+vhdtdtfi -lang verilog -prj Adder -o "D:/Computer Organization/Verilog/Adder/Adder.tfi" -lib work "D:/Computer Organization/Verilog/Adder//Adder.v" -module Adder -template D:/ISE/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

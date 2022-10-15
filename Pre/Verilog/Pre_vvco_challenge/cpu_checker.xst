@@ -1,0 +1,5 @@
+set -tmpdir "D:/Computer Organization/Verilog/Pre_vvco_challenge/xst/projnav.tmp"
+set -xsthdpdir "D:/Computer Organization/Verilog/Pre_vvco_challenge/xst"
+elaborate
+-ifn cpu_checker.prj
+-ifmt mixed

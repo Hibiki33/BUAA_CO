@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Computer Organization/Verilog/select_counter/code.xst" -ofn "D:/Computer Organization/Verilog/select_counter/code.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim code.ngc code_synthesis.v 

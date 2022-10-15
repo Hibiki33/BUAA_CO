@@ -1,0 +1,5 @@
+set -tmpdir "D:/Computer Organization/Verilog/CPU_output_check/xst/projnav.tmp"
+set -xsthdpdir "D:/Computer Organization/Verilog/CPU_output_check/xst"
+elaborate
+-ifn cpu_checker.prj
+-ifmt mixed
