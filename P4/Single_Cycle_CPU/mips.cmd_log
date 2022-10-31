@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Computer Organization/BUAA_CO/P4/Single_Cycle_CPU/mips.xst" -ofn "D:/Computer Organization/BUAA_CO/P4/Single_Cycle_CPU/mips.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa3s50-vqg100-4 "mips.ngc" mips.ngd  

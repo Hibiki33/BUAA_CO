@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Computer Organization/Verilog/Pre_vvco_challenge/tb_isim_beh.exe" -prj "D:/Computer Organization/Verilog/Pre_vvco_challenge/tb_beh.prj" "work.tb" "work.glbl" 
