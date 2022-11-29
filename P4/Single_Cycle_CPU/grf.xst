@@ -1,5 +1,0 @@
-set -tmpdir "D:/Computer Organization/BUAA_CO/P4/Single_Cycle_CPU/xst/projnav.tmp"
-set -xsthdpdir "D:/Computer Organization/BUAA_CO/P4/Single_Cycle_CPU/xst"
-elaborate
--ifn grf.prj
--ifmt mixed

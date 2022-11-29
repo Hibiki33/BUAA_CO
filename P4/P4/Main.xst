@@ -1,5 +1,0 @@
-set -tmpdir "D:/Computer Organization/BUAA_CO/P4/xst/projnav.tmp"
-set -xsthdpdir "D:/Computer Organization/BUAA_CO/P4/xst"
-elaborate
--ifn Main.prj
--ifmt mixed
